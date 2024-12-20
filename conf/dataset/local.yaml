@@ -1,0 +1,23 @@
+settings:
+  root: ${hydra:runtime.cwd}/data
+  mean_bag_size: 30
+  std_bag_size: 2
+  target_numbers:
+    - 8
+    - 9
+  target_probability: 0.1
+
+train:
+  split: train
+  num_bags: 2500
+  seed: 0
+
+valid:
+  split: valid
+  num_bags: 1000
+  seed: 1
+
+test:
+  split: test
+  num_bags: 1000
+  seed: 2
